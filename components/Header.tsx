@@ -12,7 +12,7 @@ function Header() {
         <a href='#'>Contact</a>
       </div>
       <div className='md:hidden grow flex justify-end cursor-pointer'>
-        <MenuIcon className='h-5' />
+        <MenuIcon className='h-7' />
       </div>
     </div>
   );

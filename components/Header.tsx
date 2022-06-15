@@ -3,7 +3,7 @@ function Header() {
   return (
     <div className='grid grid-cols-2 px-3 py-4'>
       <div className='cursor-pointer'>
-        <h1>Digital Agency</h1>
+        <h1 className='font-bold'>DIGITAL AGENCY</h1>
       </div>
       <div className='hidden md:flex grow justify-end cursor-pointer space-x-8'>
         <a href='#'>Home</a>

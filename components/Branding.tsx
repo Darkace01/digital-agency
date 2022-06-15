@@ -14,7 +14,7 @@ function Branding({ title, subtitle, image, reverse }: Props) {
         reverse ? 'flex-row-reverse' : 'flex-row'
       }  py-6 md:justify-center md:items-center`}
     >
-      <div className='max-w-sm md:max-w-md mx-auto md:mx-0 md:items-center space-y-6 py-8 pl-10'>
+      <div className='max-w-sm md:max-w-md mx-auto md:mx-0 md:items-center space-y-6 py-8 md:pl-10'>
         <h1 className='font-bold text-4xl text-center md:text-left'>{title}</h1>
         <p className='text-center md:text-left'>{subtitle}</p>
         <div className='flex justify-center md:justify-start'>

@@ -25,7 +25,7 @@ function Branding({ title, subtitle, image, reverse }: Props) {
       <div className='flex justify-center md:max-w-lg'>
         <div className='relative h-96 w-96'>
           <Image
-            src={image}
+            src={`${image}`}
             alt='hero'
             layout='fill'
             objectFit='contain'

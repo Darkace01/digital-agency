@@ -40,6 +40,16 @@ const Home: NextPage = () => {
         <section>
           <TestimonialRow />
         </section>
+        <section>
+          <Branding
+            title='Be a part of the next big thing'
+            image='/asset/customer-support.png'
+            reverse={false}
+            subtitle='We work with Brans, Startups, to SMEs. Colaborate for more impact and growt'
+            useButton={true}
+            buttonText='Contact Us'
+          />
+        </section>
       </main>
     </div>
   );

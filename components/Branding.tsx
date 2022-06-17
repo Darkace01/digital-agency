@@ -1,13 +1,23 @@
 import Image from 'next/image';
 import { ArrowDownIcon, ArrowRightIcon } from '@heroicons/react/outline';
+import Button from './Button';
 
 interface Props {
   title: string;
   subtitle?: string;
   image?: string;
   reverse?: boolean;
+  useButton?: boolean;
+  buttonText?: string;
 }
-function Branding({ title, subtitle, image, reverse }: Props) {
+function Branding({
+  title,
+  subtitle,
+  image,
+  reverse,
+  useButton = false,
+  buttonText,
+}: Props) {
   return (
     <div
       className={` flex flex-col md:${
@@ -18,8 +28,14 @@ function Branding({ title, subtitle, image, reverse }: Props) {
         <h1 className='font-bold text-4xl text-center md:text-left'>{title}</h1>
         <p className='text-center md:text-left'>{subtitle}</p>
         <div className='flex justify-center md:justify-start'>
-          <ArrowDownIcon className='h-5 w-5 md:hidden' />
-          <ArrowRightIcon className='h-5 w-5 hidden md:inline' />
+          {useButton ? (
+            <Button title={`${buttonText}`} />
+          ) : (
+            <>
+              <ArrowDownIcon className='h-5 w-5 md:hidden' />
+              <ArrowRightIcon className='h-5 w-5 hidden md:inline' />
+            </>
+          )}
         </div>
       </div>
       <div className='flex justify-center md:max-w-lg'>

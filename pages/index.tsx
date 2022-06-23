@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Branding from '../components/Branding';
 import Companies from '../components/Companies';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import TestimonialRow from '../components/TestimonialRow';
@@ -51,6 +52,7 @@ const Home: NextPage = () => {
           />
         </section>
       </main>
+      <Footer />
     </div>
   );
 };

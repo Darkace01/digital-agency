@@ -4,7 +4,7 @@ import Button from './Button';
 function Hero() {
   return (
     <div className='flex flex-col md:flex-row py-6'>
-      <div className='max-w-sm md:max-w-lg mx-auto space-y-6 py-8'>
+      <div className='max-w-sm md:max-w-md/2 mx-auto space-y-6 py-8'>
         <h1 className='font-bold text-5xl text-center md:text-left'>
           Building digital products, brands & experience
         </h1>
